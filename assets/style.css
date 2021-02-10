@@ -1,0 +1,48 @@
+:root {
+  --grey: grey;
+}
+
+/* THIS CONTAINER IS HOW I CENTERED ALL OF MY CONTENT */
+.container {
+  margin: 50px auto;
+  padding: 5px;
+  max-width: 700px;
+  font-family: monospace;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-section {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+} 
+
+/* HOW I GOT MY IMAGE TO SHRINK AND FIT ON THE RIGHT SIDE OF MY H1 AND P TAGS */
+.img-frame {
+  position:relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border: 2px solid blue;
+}
+
+header img {
+  max-width: 100%;
+  height: auto; 
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+display: inline-block;
+}
+
