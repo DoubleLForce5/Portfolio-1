@@ -98,17 +98,6 @@ justify-content: space-between;
 #contact-me ul li {
   color: var(--grey);
 }
-/* HOW I GOT THE CARDS TO LAYOUT RIGHT */
-/* .card-section {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-.project-card {
-  padding: 10px;
-} */
-
 
 @media screen and (max-width: 414px) {
   nav ul li {
