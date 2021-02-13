@@ -1,5 +1,9 @@
 :root {
-  --grey: grey;
+  --grey: #4c4c4c;
+}
+
+body {
+  margin-top: 100px;
 }
 
 /* THIS CONTAINER IS HOW I CENTERED ALL OF MY CONTENT */
@@ -21,7 +25,21 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-right: 20px;
+  padding-top: 40px;
 } 
+
+.header h1 {
+  font-size: 30px;
+  margin: -10px;
+  padding-left: 10px;
+  font-weight: -300x;
+}
+
+.header p {
+  font-size: larger;
+  color: var(--grey);
+}
 
 /* HOW I GOT MY IMAGE TO SHRINK AND FIT ON THE RIGHT SIDE OF MY H1 AND P TAGS */
 .img-frame {
@@ -32,17 +50,69 @@
   border: 2px solid blue;
 }
 
+/* MAX-WIDTH IS 100% FOR RESPONSIVENESS */
 header img {
   max-width: 100%;
   height: auto; 
 }
 
+/* HOW I CENTERED MY NAV BAR UNDER MY HEADER */
 nav {
   display: flex;
   justify-content: center;
+  padding-right: 50px;
 }
 
+/* HOW I GOT THE LINKS TO FORM A ROW INSTEAD OF A COLUMN */
 nav ul li {
 display: inline-block;
+padding: 30px;
+justify-content: space-between;
 }
 
+#about p {
+  color: var(--grey);
+}
+
+/* PROJECT IMAGE */
+.secondary-project {
+  max-height: 250px; 
+  max-width: 250px;
+}  
+
+#main-project {
+  max-height: 350px; 
+  max-width: 350px;
+}
+
+#work h2 {
+  color: var(--grey);
+}
+
+.work-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around
+}
+
+#contact-me ul li {
+  color: var(--grey);
+}
+/* HOW I GOT THE CARDS TO LAYOUT RIGHT */
+/* .card-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.project-card {
+  padding: 10px;
+} */
+
+
+@media screen and (max-width: 414px) {
+  nav ul li {
+      padding-right: 100px;
+      padding-left: 70px;
+  }
+}
